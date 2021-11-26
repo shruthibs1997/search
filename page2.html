@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>starwars next page</title>
+    <style>
+        body {
+            background-color: rgb(12, 6, 6);
+        }
+
+        #name {
+            color: yellow;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 4rem;
+            font-weight: bold;
+            margin-top: 40px;
+            margin-left: 10px;
+        }
+
+        .mainbox {
+            width: 50%;
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 49% 49%;
+            grid-column-gap: 2%;
+            grid-row-gap: 10px;
+            margin-left: 10px;
+        }
+
+        .box {
+            padding: 5%;
+            border-radius: 5px;
+            background-color: rgb(53, 52, 52);
+            display: flex;
+
+        }
+
+        .box1,
+        .box2 {
+            width: 50%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .box2 {
+            text-align: right;
+            font-weight: normal;
+            color: yellow;
+        }
+
+        #btn {
+            width: 15%;
+            height: 60px;
+            margin-left: 15px;
+            /* transform: skew(20deg); */
+            border: none;
+            background-color: yellow;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-top: 200px;
+            cursor: pointer;
+            clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn" onclick="backtohome()">BACK TO HOME</button>
+    <div id="name"></div>
+    <div class="mainbox">
+        <div class="box">
+            <div class="box1">BIRTH YEAR</div>
+            <div class="box2" id="b12"></div>
+        </div>
+        <div class="box">
+            <div class="box1">GENDER</div>
+            <div class="box2" id="b22"></div>
+        </div>
+        <div class="box">
+            <div class="box1">HAIR COLOR</div>
+            <div class="box2" id="b32"></div>
+        </div>
+        <div class="box">
+            <div class="box1">HEIGHT</div>
+            <div class="box2" id="b42"></div>
+        </div>
+        <div class="box">
+            <div class="box1">MASS</div>
+            <div class="box2" id="b52"></div>
+        </div>
+        <div class="box">
+            <div class="box1">SKIN COLOR</div>
+            <div class="box2" id="b62"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="page2.js"></script>
